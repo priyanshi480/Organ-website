@@ -1,0 +1,78 @@
+.app {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  min-height: 100vh; /* Ensure the minimum height is the viewport height */
+  display: flex; /* Use flexbox to arrange children */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1; /* Allow this section to grow and fill the available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollable-categories {
+  position: absolute; /* Positioning categories at the bottom-left */
+  bottom: 70px; /* Adjust this based on the height of the footer */
+  left: 20px; /* Distance from the left */
+  width: 300px; /* Adjust width as needed */
+  max-height: 200px; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.scrollable-categories h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.scrollable-categories ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.scrollable-categories li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd; /* Divider between items */
+}
+
+.scrollable-categories li:last-child {
+  border-bottom: none; /* Remove divider for the last item */
+}
+
+.search-box {
+  position: absolute; /* Positioning search box at the bottom-right */
+  bottom: 70px; /* Adjust this based on the height of the footer */
+  right: 20px; /* Distance from the right */
+  display: flex;
+}
+
+.search-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Adjust width as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+h2 {
+  margin: 20px 0;
+  color: #333;
+}
+
+.footer {
+  background-color: #282c34; /* Footer background color */
+  color: white; /* Footer text color */
+  text-align: center;
+  padding: 10px 0; /* Padding for footer */
+  position: relative; /* Allows it to be positioned at the bottom */
+}

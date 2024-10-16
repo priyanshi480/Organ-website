@@ -1,0 +1,87 @@
+header {
+  display: flex; /* Use flexbox to arrange items */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
+  background-color: #282c34; /* Dark background color */
+  color: white; /* White text color */
+  padding: 20px; /* Padding for header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Font size for the title */
+}
+
+nav {
+  display: flex; /* Arrange nav items in a row */
+  gap: 20px; /* Space between buttons */
+  align-items: center; /* Align items vertically */
+}
+
+nav button {
+  background-color: #61dafb; /* Light blue background for buttons */
+  color: #282c34; /* Dark text color for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav button:hover {
+  background-color: #21a1f1; /* Darker blue on hover */
+}
+
+nav button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.organ-list-btn {
+  background-color: #ffcc00; /* Yellow background for Organ List button */
+}
+
+.organ-list-btn:hover {
+  background-color: #e6b800; /* Darker yellow on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed; /* Position it fixed to the side */
+  top: 0;
+  right: 0;
+  width: 300px; /* Width of the sidebar */
+  height: 100%; /* Full height */
+  background-color: #282c34; /* Dark background for sidebar */
+  color: white; /* White text color */
+  padding: 20px; /* Padding for sidebar */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: transform 0.3s ease; /* Smooth transition for sidebar */
+}
+
+.close-btn {
+  background-color: red; /* Red background for close button */
+  color: white; /* White text for close button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.close-btn:hover {
+  background-color: darkred; /* Darker red on hover */
+}
+
+.sidebar h2 {
+  margin-top: 0; /* Remove top margin */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.sidebar li {
+  margin: 10px 0; /* Margin for list items */
+}
